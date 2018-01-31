@@ -29,6 +29,10 @@
     "postinstall": "webpack",
     "start": "webpack -w"
   },
+  "engines": {
+    "npm": "5.6.0",
+    "node": "9.3.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/learnor/robinhold.git"
