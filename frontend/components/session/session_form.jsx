@@ -26,7 +26,7 @@ class SessionForm extends React.Component {
   handleSubmit (e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    this.props.processForm({user});
+    this.props.processForm(user);
   }
 
   navLink() {
@@ -79,7 +79,7 @@ class SessionForm extends React.Component {
               />
             </label>
             <br />
-            <Button value={text} />
+            <button>{text}</button>
           </div>
         </form>
       </div>
