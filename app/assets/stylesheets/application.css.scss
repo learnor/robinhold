@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+@import "./css_reset.scss";
+@import "./base/fonts.scss";
+@import "./components/App.scss";
+// @import "./components/login_page.scss";

@@ -1,0 +1,118 @@
+
+div.login-page {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  min-height: 480px;
+}
+
+.login-image {
+  display: block;
+  background-image: url(https://d2ue93q3u507c2.cloudfront.net/assets/generated_assets/94977d34f99015525dcd0fc9987fcbe6.png);
+  background-position: 50%;
+  background-size: cover;
+  flex: 1;
+  height: 100%;
+}
+
+.form-header {
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -.14px;
+  line-height: 30px;
+  margin: 0 0 16px;
+}
+
+.form-container {
+  flex: 1;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 52px;
+  width: 412px;
+}
+
+.form-vertical label>:first-child {
+    color: #171718;
+    padding: 9px 0;
+  }
+
+.login-form input[type] {
+  height: 48px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+input[type], textarea {
+  background: #fafafa;
+  border-color: #fafafa;
+}
+
+input[type]:hover, textarea:hover {
+  background: #f4f4f5;
+  border-color: #cbcbcb;
+}
+
+input[type]:focus, textarea:focus {
+  border-color: #21ce99;
+}
+
+input[type], textarea {
+    color: #0e0d0d;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    height: 36px;
+    line-height: 1.5em;
+    outline: 0;
+    padding: 0 13px;
+    -webkit-transition: border-color .2s;
+    transition: border-color .2s;
+    width: 100%;
+}
+
+.form-vertical p {
+  padding: 14px 0;
+}
+
+.form-vertical a {
+  color: #21ce99;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.form-vertical a:hover {
+  color: #1ae9aa;
+}
+
+button {
+  margin-top: 60px;
+  color: #fff;
+  border-color: #21ce99;
+  background-color: #21ce99;
+  font-weight: 500;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 48px;
+  padding: 0 32px;
+  width: 206px;
+}
+
+button:hover {
+  border-color: #1ae9aa;
+  background-color: #1ae9aa;
+}
+
+.error-info p {
+  font-weight: 500;
+  padding: 8px 0;
+}
+
+.error-info p>i {
+  margin-right: 8px;
+}

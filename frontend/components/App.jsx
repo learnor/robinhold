@@ -1,18 +1,17 @@
-import React from 'react';
-import GreetingContainer from './greeting/greeting_container';
+import React, {Fragment} from 'react';
+import { Switch, Route } from 'react-router-dom';
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
+import HomePage from './home/home_page';
 import SessionFormContainer from './session/session_form_container';
-import { AuthRoute } from '../util/route_util';
+import Login from '../components/login/login';
 
 const App = () => (
-  <div>
-    <header>
-      <h1>Robinhold</h1>
-      <GreetingContainer />
-    </header>
-
-    <AuthRoute path="/login" component={SessionFormContainer} />
-    <AuthRoute path="/signup" component={SessionFormContainer} />
-  </div>
+  <Fragment>
+    <Switch>
+      <AuthRoute path="/login" component={Login} />
+      <ProtectedRoute path="/" component={HomePage} />
+    </Switch>
+  </Fragment>
 );
 
 export default App;

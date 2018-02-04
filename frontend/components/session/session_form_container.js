@@ -8,7 +8,7 @@ const mapStateToProps = state => ({
   errors: state.errors.session
 });
 
-const mapsDispatchToProps = (dispatch, { location }) => {
+const mapDispatchToProps = (dispatch, { location }) => {
   const formType = location.pathname.slice(1);
   const processForm = (formType === 'login') ? login : signup;
   return {
@@ -19,5 +19,5 @@ const mapsDispatchToProps = (dispatch, { location }) => {
 
 export default connect(
   mapStateToProps,
-  mapsDispatchToProps
+  mapDispatchToProps
 )(SessionForm);
