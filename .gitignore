@@ -22,3 +22,6 @@ bundle.js.map
 
 # Ignore wireframes
 /wire_frames/*
+
+# Ignore Guardfile
+Guardfile
