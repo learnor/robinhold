@@ -1,0 +1,33 @@
+nav.navbar {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+}
+
+nav.navbar, nav.navbar * {
+  border: 1px solid green;
+  padding: 10px;
+}
+
+.navbar-header {
+  display: flex;
+}
+
+.navbar-brand img {
+  width: 24px;
+
+  // temp properties
+  padding: 0;
+  border: 0;
+}
+
+.navbar-search {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.navbar-nav {
+  display: flex;
+  margin: 0 20px;
+}

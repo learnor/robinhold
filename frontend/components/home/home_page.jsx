@@ -1,7 +1,9 @@
 import React from 'react';
 
-import GreetingContainer from '../greeting/greeting_container';
+import NavbarContainer from '../navbar/navbar_container';
 
 export default () => (
-  <GreetingContainer />
+  <div>
+  <NavbarContainer />
+  </div>
 );
