@@ -1,10 +1,13 @@
 import React from 'react';
 
-const Navbar = () => (
+const Logout = ({ currentUser,logout }) => (
+  currentUser ?  <li> <a href= "#" onClick={logout}>Logout</a></li> : "not login"
+);
+const Navbar = ({currentUser, logout}) => (
   <nav className="navbar">
     <div className="navbar-header">
       <a className="navbar-brand" >
-        <img src="72870.png" /> 
+        <img src="72870.png" />
       </a>
     </div>
     <div className="navbar-search">
@@ -13,6 +16,7 @@ const Navbar = () => (
     <ul className="navbar-nav">
       <li><a href="/">Home</a></li>
       <li><a href="/account">Account</a></li>
+      <Logout logout={logout} currentUser={currentUser} />
     </ul>
   </nav>
 );
