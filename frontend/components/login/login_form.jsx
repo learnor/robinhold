@@ -29,7 +29,7 @@ class LoginForm extends React.Component {
       <div className="error-info">
         {this.props.errors.map((error, i) => (
           <p key={`error-${i}`}>
-          <i className="fas fa-exclamation-circle"></i>
+            <i className="fas fa-exclamation-circle"></i>
             {error}
           </p>
         ))}
@@ -45,7 +45,7 @@ class LoginForm extends React.Component {
         <div className="form-vertical">
           <div className="form-group">
             <label>
-              <div>Email or Username</div>
+              <div>Username</div>
               <div>
                 <input
                   type="text"
