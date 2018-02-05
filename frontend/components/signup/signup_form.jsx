@@ -31,7 +31,7 @@ class SignupForm extends React.Component {
   handleSubmit (e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    delete user.password_confirmation;
+    // delete user.password_confirmation;
     this.props.signup(user);
   }
 
