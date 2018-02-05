@@ -121,7 +121,6 @@ class SignupForm extends React.Component {
           name="password_confirmation"
           value={password_confirmation}
           onChange={this.update()}
-          onKeyUp={(e) => this.confirmPassword(e)}
           placeholder="Confirm Password"
         />
       </div>
