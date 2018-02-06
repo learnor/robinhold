@@ -25,3 +25,6 @@ bundle.js.map
 
 # Ignore Guardfile
 Guardfile
+
+# Ignore temp test entry file
+robin_hold_test.jsx
