@@ -1,0 +1,27 @@
+.news-index {
+  margin-left: 6  0px;
+}
+.news-index-item, .news-index-item * {
+
+  border: 1px solid green;
+  padding: 3px;
+}
+
+.news-index-item {
+  display: flex;
+  width: 500px;
+  height: 200px
+}
+
+.news-index-item a {
+  flex: 1;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  flex: 1;
+}
