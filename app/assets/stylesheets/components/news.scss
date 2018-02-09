@@ -1,16 +1,21 @@
 .news-index {
   margin-left: 6  0px;
 }
-.news-index-item, .news-index-item * {
-
-  border: 1px solid green;
-  padding: 3px;
-}
+// .news-index-item, .news-index-item * {
+//
+//   border: 1px solid green;
+//   padding: 3px;
+// }
 
 .news-index-item {
   display: flex;
-  width: 500px;
-  height: 200px
+  width: 100%;
+  height: 100px;
+  padding: 5px 0;
+}
+
+.news-index-item:hover {
+  background-color: #f7f7f7;
 }
 
 .news-index-item a {
@@ -18,6 +23,7 @@
 }
 
 .item-content {
+  flex: 2;
   display: flex;
   flex-direction: column;
 }

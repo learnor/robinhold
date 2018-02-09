@@ -1,0 +1,72 @@
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-page header {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 780px;
+  margin-top: 125px;
+  margin-left: 52px;
+  margin-bottom: 25px;
+  padding: 10px;
+  font-size: 36px;
+}
+
+.form-container {
+  width: 740px;
+}
+
+.logo img {
+  width: 36px;
+  padding: 10px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 52px;
+  width: 60%;
+}
+
+.full-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup-form input[type] {
+  border: 1px solid #b1bfc4;
+  background-color: white;
+  padding: 20px;
+  color: #b1bfc4;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: lighter;
+  border-radius: 4px;
+  transition: border-color 200ms;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+.signup-form input[name="cash_value"] {
+  margin-bottom: 0;
+}
+
+.full-name input[type] {
+  width: 48%;
+}
+
+.form-container p {
+  font-size: 18px;
+  padding: 14px 0;
+}
+
+.form-container a {
+  color: #21ce99;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+}

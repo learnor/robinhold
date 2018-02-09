@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180206015348) do
+ActiveRecord::Schema.define(version: 20180208090851) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "companies", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "ticker", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["ticker"], name: "index_companies_on_ticker", unique: true
+  end
 
   create_table "news", force: :cascade do |t|
     t.string "title", null: false
@@ -22,6 +30,7 @@ ActiveRecord::Schema.define(version: 20180206015348) do
     t.string "img_url", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "src_url"
   end
 
   create_table "users", force: :cascade do |t|
@@ -37,6 +46,16 @@ ActiveRecord::Schema.define(version: 20180206015348) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["session_token"], name: "index_users_on_session_token", unique: true
     t.index ["username"], name: "index_users_on_username", unique: true
+  end
+
+  create_table "watched_stocks", force: :cascade do |t|
+    t.integer "watcher_id", null: false
+    t.integer "company_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["company_id"], name: "index_watched_stocks_on_company_id"
+    t.index ["watcher_id", "company_id"], name: "index_watched_stocks_on_watcher_id_and_company_id", unique: true
+    t.index ["watcher_id"], name: "index_watched_stocks_on_watcher_id"
   end
 
 end

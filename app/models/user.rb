@@ -5,6 +5,13 @@ class User < ApplicationRecord
 
   attr_reader :password
 
+  has_many :watched_stocks, class_name: :WatchedStock, foreign_key: :watcher_id
+  has_many :watched_companies, through: :watched_stocks, source: :company
+
+  def watched?(company_id)
+    self.watched_companies.pluck(:id).include?(company_id)
+  end
+
   before_validation :ensure_session_token!
 
   def self.find_by_credentials(username, password)

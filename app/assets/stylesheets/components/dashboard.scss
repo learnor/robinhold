@@ -1,0 +1,65 @@
+.dashboard {
+  display: flex;
+  width: 950px;
+  margin: 100px auto;
+}
+
+// .dashboard * {
+//   border: 1px solid blue;
+// }
+
+.main {
+  width: 65%;
+  padding-right: 30px;
+}
+
+.history-chart {
+  height: 380px;
+}
+
+.news {
+  height: auto;
+}
+
+.side {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  // z-index: 1;
+  // border: 1px solid;
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+}
+
+.holding-stock-list {
+  flex: 1;
+}
+
+.watch-list {
+  flex: 1;
+}
+
+.stock-list-header {
+  padding: 20px;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.stock-list {
+  padding: 0 0 15px;
+}
+
+.stock-list-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.stock-list-item:hover {
+  background-color: #f7f7f7;
+}
+.stock-text,
+.stock-thumbnail,
+.stock-price {
+  padding: 0 10px;
+}
