@@ -9,7 +9,7 @@ const WatchListItem = ({company}) => (
           {company.ticker}
         </h4>
       </div>
-      <img src="stock-thumbnail" className="stock-price" />
+      <img className="stock-thumbnail" src="stock_thumbnails/red1" />
       <span className="stock-price">$200</span>
     </li>
   </Link>

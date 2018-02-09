@@ -24,56 +24,70 @@ const Dashboard = () => (
           Sotcks
         </h3>
         <ul className="stock-list">
-          <li className="stock-list-item">
-          <div className="stock-text">
-            <h4 className="stock-ticker">
-            APPL
-            </h4>
-            <span className="share-quantity">897 shares</span>
-          </div>
-          <img src="stock-thumbnail" className="stock-price" />
-          <span className="stock-price">$200</span>
-          </li>
-          <li className="stock-list-item">
-          <div className="stock-text">
-            <h4 className="stock-ticker">
-            APPL
-            </h4>
-            <span className="share-quantity">897 shares</span>
-          </div>
-          <img src="stock-thumbnail" className="stock-price" />
-          <span className="stock-price">$200</span>
-          </li>
-          <li className="stock-list-item">
-          <div className="stock-text">
-            <h4 className="stock-ticker">
-            APPL
-            </h4>
-            <span className="share-quantity">897 shares</span>
-          </div>
-          <img src="stock-thumbnail" className="stock-price" />
-          <span className="stock-price">$200</span>
-          </li>
-          <li className="stock-list-item">
-          <div className="stock-text">
-            <h4 className="stock-ticker">
-            APPL
-            </h4>
-            <span className="share-quantity">897 shares</span>
-          </div>
-          <img src="stock-thumbnail" className="stock-price" />
-          <span className="stock-price">$200</span>
-          </li>
-          <li className="stock-list-item">
-          <div className="stock-text">
-            <h4 className="stock-ticker">
-            APPL
-            </h4>
-            <span className="share-quantity">897 shares</span>
-          </div>
-          <img src="stock-thumbnail" className="stock-price" />
-          <span className="stock-price">$200</span>
-          </li>
+        <li className="stock-list-item">
+        <div className="stock-text">
+          <h4 className="stock-ticker">
+          APPL
+          </h4>
+          <span className="share-quantity">897 shares</span>
+        </div>
+        <img className="stock-thumbnail" src="stock_thumbnails/green1.png" />
+        <span className="stock-price">$200</span>
+        </li><li className="stock-list-item">
+        <div className="stock-text">
+          <h4 className="stock-ticker">
+          APPL
+          </h4>
+          <span className="share-quantity">897 shares</span>
+        </div>
+        <img className="stock-thumbnail" src="stock_thumbnails/green2.png" />
+        <span className="stock-price">$200</span>
+        </li><li className="stock-list-item">
+        <div className="stock-text">
+          <h4 className="stock-ticker">
+          APPL
+          </h4>
+          <span className="share-quantity">897 shares</span>
+        </div>
+        <img className="stock-thumbnail" src="stock_thumbnails/green3.png" />
+        <span className="stock-price">$200</span>
+        </li><li className="stock-list-item">
+        <div className="stock-text">
+          <h4 className="stock-ticker">
+          APPL
+          </h4>
+          <span className="share-quantity">897 shares</span>
+        </div>
+        <img className="stock-thumbnail" src="stock_thumbnails/green4.png" />
+        <span className="stock-price">$200</span>
+        </li><li className="stock-list-item">
+        <div className="stock-text">
+          <h4 className="stock-ticker">
+          APPL
+          </h4>
+          <span className="share-quantity">897 shares</span>
+        </div>
+        <img className="stock-thumbnail" src="stock_thumbnails/green5.png" />
+        <span className="stock-price">$200</span>
+        </li><li className="stock-list-item">
+        <div className="stock-text">
+          <h4 className="stock-ticker">
+          APPL
+          </h4>
+          <span className="share-quantity">897 shares</span>
+        </div>
+        <img className="stock-thumbnail" src="stock_thumbnails/green6.png" />
+        <span className="stock-price">$200</span>
+        </li><li className="stock-list-item">
+        <div className="stock-text">
+          <h4 className="stock-ticker">
+          APPL
+          </h4>
+          <span className="share-quantity">897 shares</span>
+        </div>
+        <img className="stock-thumbnail" src="stock_thumbnails/green7.png" />
+        <span className="stock-price">$200</span>
+        </li>
         </ul>
       </div>
     <WatchListIndexContainer />
