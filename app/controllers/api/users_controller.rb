@@ -9,6 +9,15 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  def show
+    if signed_in?
+      @user = @current_user
+      render :show
+    else
+      render json: ['login first']
+    end
+  end
+
   private
 
   def user_params

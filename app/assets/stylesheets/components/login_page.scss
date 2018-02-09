@@ -5,6 +5,7 @@ div.login-page {
   width: 100%;
   height: 100vh;
   min-height: 480px;
+  font-size: 16px;
 }
 
 .login-image {
@@ -49,6 +50,7 @@ div.login-page {
 input[type], textarea {
   background: #fafafa;
   border-color: #fafafa;
+  font-size: 16px;
 }
 
 input[type]:hover, textarea:hover {
@@ -88,8 +90,13 @@ input[type], textarea {
   color: #1ae9aa;
 }
 
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
 button {
-  margin-top: 60px;
+  margin-top: 30px;
   color: #fff;
   border-color: #21ce99;
   background-color: #21ce99;
@@ -100,10 +107,17 @@ button {
   cursor: pointer;
   height: 48px;
   padding: 0 32px;
-  width: 206px;
+  width: 190px;
+  outline: none;
+  font-size: 16px;
 }
 
 button:hover {
+  border-color: #1ae9aa;
+  background-color: #1ae9aa;
+}
+
+button:focus {
   border-color: #1ae9aa;
   background-color: #1ae9aa;
 }

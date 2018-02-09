@@ -21,7 +21,7 @@ export const logoutCurrentUser = () => ({
 
 export const receiveErrors = (errors) => ({
   type: RECEIVE_SESSION_ERRORS,
-  errors: errors.responseJSON,
+  errors: errors,
 });
 
 export const receiveUser = user => ({
@@ -32,19 +32,22 @@ export const receiveUser = user => ({
 export const signup = formUser => dispatch => postUser(formUser)
 .then(
   user => dispatch(receiveCurrentUser(user)),
-  err => dispatch(receiveErrors(err))
+  err => dispatch(receiveErrors(err.responseJSON))
 );
 
 export const login = formUser => dispatch => postSession(formUser)
 .then(
-  user => dispatch(receiveCurrentUser(user)),
-  err => dispatch(receiveErrors(err))
+  user => {
+    dispatch(receiveCurrentUser(user));
+    // dispatch(getUserInfo());
+  },
+  err => dispatch(receiveErrors(err.responseJSON))
 );
 
 export const logout = () => dispatch => deleteSession()
 .then(
   () => dispatch(logoutCurrentUser()),
-  err => dispatch(receiveErrors(err))
+  err => dispatch(receiveErrors(err.responseJSON))
 );
 
 export const getUserInfo = () => dispatch => getUser()

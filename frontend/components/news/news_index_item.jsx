@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 
 class NewsIndexItem extends Component {
-  constructor(props) {
-    super(props);
-  }
-
+  
   render() {
     const { news } = this.props;
     return (
@@ -28,4 +25,4 @@ class NewsIndexItem extends Component {
   }
 }
 
-export default NewsIndexItem
+export default NewsIndexItem;

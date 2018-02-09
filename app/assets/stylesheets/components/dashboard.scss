@@ -14,7 +14,13 @@
 }
 
 .history-chart {
-  height: 380px;
+  height: 320px;
+  border: 1px solid green;
+}
+
+.history-chart img {
+  width: 100%;
+  height: 100%;
 }
 
 .news {
@@ -49,6 +55,7 @@
 }
 
 .stock-list-item {
+  height: 60px;
   display: flex;
   justify-content: space-around;
   align-items: center;

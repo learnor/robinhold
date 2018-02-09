@@ -10,6 +10,11 @@ class LoginForm extends React.Component {
       password: "",
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.loginDemo = this.loginDemo.bind(this);
+  }
+
+  componentWillUnmount () {
+    this.props.clearErrors();
   }
 
   update(field) {
@@ -35,6 +40,16 @@ class LoginForm extends React.Component {
         ))}
       </div>
     );
+  }
+
+  loginDemo(e){
+    e.preventDefault();
+    this.state = {
+      username: "demo_user",
+      password: "password"
+    };
+    const user = this.state;
+    this.props.login(user);
   }
 
   render() {
@@ -76,7 +91,10 @@ class LoginForm extends React.Component {
           <a href="#/signup"> Let's get you signed up.</a>
           </p>
           {this.renderErrors()}
-          <button type="submit">Sign In</button>
+          <div className="button-group">
+            <button type="submit" id="login">Sign In</button>
+            <button onClick={this.loginDemo}>Demo</button>
+          </div>
         </div>
 
       </form>
