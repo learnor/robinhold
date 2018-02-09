@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-New.destroy_all
+News.destroy_all
 
 News.create(title: "US stock market loses more than $3 trillion in 15 days", body: "The U.S. stock market, which has lost more than $3 trillion in the last 15 days, started out strong today, rallying 300 points at the opening bell before tripping, falling and struggling to get back up in the afternoon.", publish_date: "Hello2", img_url: "https://s.abcnews.com/images/US/stock-exchange-sh-2-er-180209_21x13_992.jpg", src_url: "http://abcnews.go.com/Business/stock-market-opens-strong-day-dow-tanked-1000/story?id=52961144")
 News.create(title: "This stock-market shakeout looks a lot like 1996-97", body: "The U.S. stock market, which has lost more than $3 trillion in the last 15 days, started out strong today, rallying 300 points at the opening bell before tripping, falling and struggling to get back up in the afternoon.", publish_date: "Hello2", img_url: "https://ei.marketwatch.com/Multimedia/2018/02/09/Photos/ZH/MW-GD461_clinto_20180209114828_ZH.jpg?uuid=0dc9f58c-0db9-11e8-b40c-9c8e992d421e", src_url: "https://www.marketwatch.com/story/this-stock-market-shakeout-looks-a-lot-like-1996-97-in-one-chart-2018-02-09")
