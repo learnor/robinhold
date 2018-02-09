@@ -1,24 +1,49 @@
-let path = require('path');
+let path = require("path");
+let webpack = require("webpack");
 
+let plugins = []; // if using any plugins for both dev and production
+let devPlugins = []; // if using any plugins for development
+
+let prodPlugins = [
+  new webpack.DefinePlugin({
+    'process.env': {
+      'NODE_ENV': JSON.stringify('production')
+    }
+  }),
+  new webpack.optimize.UglifyJsPlugin({
+    compress: {
+      warnings: true
+    }
+  })
+];
+
+plugins = plugins.concat(
+  process.env.NODE_ENV === 'production' ? prodPlugins : devPlugins
+)
+
+// include plugins config
 module.exports = {
-  entry: './frontend/robin_hold.jsx',
+  context: __dirname,
+  entry: "./frontend/robin_hold.jsx",
   output: {
-    filename: './app/assets/javascripts/bundle.js',
+    path: path.resolve(__dirname, "app", "assets", "javascripts"),
+    filename: "bundle.js"
   },
+  plugins: plugins,
   module: {
     loaders: [
       {
-        test: [/\.jsx?$/],
-        exclude: /(node_modules)/,
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
-          presets: ['env', 'react']
+          presets: ['react', 'env']
         }
       }
     ]
   },
   devtool: 'source-map',
   resolve: {
-    extensions: ['.js', '.jsx', '*']
+    extensions: [".js", ".jsx", "*"]
   }
 };

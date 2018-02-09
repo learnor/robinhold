@@ -12,7 +12,7 @@ class NewsIndex extends Component {
   }
 
   render () {
-    console.log(`props: ${this.props}`);
+    
     const { news } = this.props;
     return (
       <ul className="news-index">
