@@ -6,23 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-WatchedStock.destroy_all
-
-WatchedStock.create(watcher_id: 1, company_id: 1)
-WatchedStock.create(watcher_id: 1, company_id: 2)
-WatchedStock.create(watcher_id: 1, company_id: 3)
-WatchedStock.create(watcher_id: 1, company_id: 4)
-WatchedStock.create(watcher_id: 1, company_id: 5)
-WatchedStock.create(watcher_id: 1, company_id: 4)
-WatchedStock.create(watcher_id: 1, company_id: 13)
-
 News.destroy_all
 
-News.create(title: "US stock market loses more than $3 trillion in 15 days", body: "The U.S. stock market, which has lost more than $3 trillion in the last 15 days, started out strong today, rallying 300 points at the opening bell before tripping, falling and struggling to get back up in the afternoon.", publish_date: "Hello2", img_url: "https://s.abcnews.com/images/US/stock-exchange-sh-2-er-180209_21x13_992.jpg", src_url: "http://abcnews.go.com/Business/stock-market-opens-strong-day-dow-tanked-1000/story?id=52961144")
-News.create(title: "This stock-market shakeout looks a lot like 1996-97", body: "The U.S. stock market, which has lost more than $3 trillion in the last 15 days, started out strong today, rallying 300 points at the opening bell before tripping, falling and struggling to get back up in the afternoon.", publish_date: "Hello2", img_url: "https://ei.marketwatch.com/Multimedia/2018/02/09/Photos/ZH/MW-GD461_clinto_20180209114828_ZH.jpg?uuid=0dc9f58c-0db9-11e8-b40c-9c8e992d421e", src_url: "https://www.marketwatch.com/story/this-stock-market-shakeout-looks-a-lot-like-1996-97-in-one-chart-2018-02-09")
-News.create(title: "Market swings wildly (again) as stocks face worst week since 2008", body: 'Stocks swung wildly in another volatile day of trading Friday. The Dow stormed back for a gain after losing more than 500 points.
+News.create(title: "US stock market loses more than $3 trillion in 15 days", body: "The U.S. stock market, which has lost more than $3 trillion in the last 15 days, started out strong today, rallying 300 points at the opening bell before tripping, falling and struggling to get back up in the afternoon.", publish_date: DateTime.new(2018,1,23), img_url: "https://s.abcnews.com/images/US/stock-exchange-sh-2-er-180209_21x13_992.jpg", src_url: "http://abcnews.go.com/Business/stock-market-opens-strong-day-dow-tanked-1000/story?id=52961144")
+News.create(title: "This stock-market shakeout looks a lot like 1996-97", body: "The U.S. stock market, which has lost more than $3 trillion in the last 15 days, started out strong today, rallying 300 points at the opening bell before tripping, falling and struggling to get back up in the afternoon.", publish_date: DateTime.new(2018,1,17), img_url: "https://ei.marketwatch.com/Multimedia/2018/02/09/Photos/ZH/MW-GD461_clinto_20180209114828_ZH.jpg?uuid=0dc9f58c-0db9-11e8-b40c-9c8e992d421e", src_url: "https://www.marketwatch.com/story/this-stock-market-shakeout-looks-a-lot-like-1996-97-in-one-chart-2018-02-09")
+News.create(title: "Market swings wildly (again) as stocks face worst week since 2008", body: "Stocks swung wildly in another volatile day of trading Friday. The Dow stormed back for a gain after losing more than 500 points.
 
-Fears about inflation and soaring bond yields have sent the Dow plunging about 6% this week. If it closes down more than 6.4%, the week will be the worst since 2008.', publish_date: "Hello2", img_url: "http://i2.cdn.turner.com/money/dam/assets/180208202430-feb-8-dow-5-day-780x439.jpg", src_url: "http://money.cnn.com/2018/02/09/investing/dow-jones-stock-market/index.html")
+Fears about inflation and soaring bond yields have sent the Dow plunging about 6% this week. If it closes down more than 6.4%, the week will be the worst since 2008.", publish_date: DateTime.new(2018,1,20), img_url: "http://i2.cdn.turner.com/money/dam/assets/180208202430-feb-8-dow-5-day-780x439.jpg", src_url: "http://money.cnn.com/2018/02/09/investing/dow-jones-stock-market/index.html")
 
 User.destroy_all
 
@@ -3318,3 +3308,13 @@ Company.create(ticker: "ZSAN", name: "Zosano Pharma Corporation")
 Company.create(ticker: "ZUMZ", name: "Zumiez Inc.")
 Company.create(ticker: "ZYNE", name: "Zynerba Pharmaceuticals, Inc.")
 Company.create(ticker: "ZNGA", name: "Zynga Inc.")
+
+WatchedStock.destroy_all
+
+WatchedStock.create(watcher_id: 1, company_id: 1)
+WatchedStock.create(watcher_id: 1, company_id: 2)
+WatchedStock.create(watcher_id: 1, company_id: 3)
+WatchedStock.create(watcher_id: 1, company_id: 4)
+WatchedStock.create(watcher_id: 1, company_id: 5)
+WatchedStock.create(watcher_id: 1, company_id: 4)
+WatchedStock.create(watcher_id: 1, company_id: 13)
