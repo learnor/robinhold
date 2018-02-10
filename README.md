@@ -18,7 +18,7 @@ Users can also use ##demo## button to try out the features before they register 
 
 Users can also get an account if they feel like the service.
 
-![img]{https://github.com/learnor/robinhold/blob/master/WX20180209-154651.png}
+![img](https://github.com/learnor/robinhold/blob/master/WX20180209-154651.png)
 
 ### Watch/Stock List
 
