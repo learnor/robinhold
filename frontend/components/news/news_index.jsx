@@ -2,13 +2,9 @@ import React, { Component } from 'react';
 import NewsIndexItem from './news_index_item';
 
 class NewsIndex extends Component {
-  constructor(props){
-    super(props);
-
-  }
 
   componentWillMount() {
-    this.props.getAllNews();
+    this.props.getAPINews('business', 'stock');
   }
 
   render () {
@@ -17,12 +13,10 @@ class NewsIndex extends Component {
     return (
       <ul className="news-index">
         {
-          news.map(eachNews =>
-            <NewsIndexItem
-              key={eachNews.id}
-              news={eachNews}
-            />
-          )
+          news.map((eachNews, i) =>
+          (
+            <NewsIndexItem news={eachNews} key={i} />
+          ))
         }
       </ul>
     );

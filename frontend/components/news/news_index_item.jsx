@@ -4,20 +4,23 @@ class NewsIndexItem extends Component {
 
   render() {
     const { news } = this.props;
+    if (!news.urlToImage) {
+      return null;
+    }
     return (
       <li className="news-index-item">
-        <a href="#">
-          <img className="news-thumbnail" src={`${news.img_url}`} />
+        <a href="{news.url}">
+          <img src={news.urlToImage} className="news-thumbnail" />
         </a>
         <div className="item-content">
           <div className="title">
             {news.title}
           </div>
           <div className="body">
-            {news.body}
+            {news.description}
           </div>
           <div className="publish-date">
-            {news.publish_date}
+            {news.publishedAt}
           </div>
         </div>
       </li>
