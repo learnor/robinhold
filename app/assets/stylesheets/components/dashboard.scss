@@ -2,6 +2,7 @@
   display: flex;
   width: 950px;
   margin: 100px auto;
+  align-items: flex-start;
 }
 
 // .dashboard * {
@@ -33,16 +34,7 @@
   flex-direction: column;
   background-color: white;
   // z-index: 1;
-  // border: 1px solid;
   box-shadow: 0 0 30px rgba(0,0,0,0.1);
-}
-
-.holding-stock-list {
-  flex: 1;
-}
-
-.watch-list {
-  flex: 1;
 }
 
 .stock-list-header {
@@ -65,6 +57,7 @@
 .stock-list-item:hover {
   background-color: #f7f7f7;
 }
+
 .stock-text,
 .stock-thumbnail,
 .stock-price {
