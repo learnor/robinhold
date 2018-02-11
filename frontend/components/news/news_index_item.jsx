@@ -9,7 +9,7 @@ class NewsIndexItem extends Component {
     }
     return (
       <li className="news-index-item">
-        <a href="{news.url}">
+        <a href={news.url}>
           <img src={news.urlToImage} className="news-thumbnail" />
         </a>
         <div className="item-content">
