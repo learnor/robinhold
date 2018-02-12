@@ -9,8 +9,8 @@ class NewsIndexItem extends Component {
     }
     return (
       <li className="news-index-item">
-        <a href={news.url}>
-          <img src={news.urlToImage} className="news-thumbnail" target="_blank" />
+        <a href={news.url} target="_blank">
+          <img src={news.urlToImage} className="news-thumbnail" />
         </a>
         <div className="item-content">
           <div className="title">
