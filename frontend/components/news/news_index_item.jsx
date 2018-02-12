@@ -10,14 +10,14 @@ class NewsIndexItem extends Component {
     return (
       <li className="news-index-item">
         <a href={news.url}>
-          <img src={news.urlToImage} className="news-thumbnail" />
+          <img src={news.urlToImage} className="news-thumbnail" target="_blank" />
         </a>
         <div className="item-content">
           <div className="title">
             {news.title}
           </div>
           <div className="body">
-            {news.description}
+            { (news.description.length < 260) ? news.description : news.description.substring(0, 257) + "..." }
           </div>
           <div className="publish-date">
             {news.publishedAt}

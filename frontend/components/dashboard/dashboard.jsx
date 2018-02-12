@@ -10,9 +10,7 @@ const Dashboard = () => (
         <img src="history-chart.png" />
       </div>
       <div className="news">
-       ==============
-       news component
-       ==============
+
        <NewsIndexContainer />
       </div>
     </div>

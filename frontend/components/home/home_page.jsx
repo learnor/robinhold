@@ -11,6 +11,6 @@ export default () => (
     <Switch>
       <ProtectedRoute path="/" component={Dashboard} />
     </Switch>
-  <footer>I am footer</footer>
+  <footer></footer>
   </div>
 );
