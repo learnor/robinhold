@@ -4,9 +4,10 @@ class NewsIndexItem extends Component {
 
   render() {
     const { news } = this.props;
-    if (!news.urlToImage) {
+    if (!news.urlToImage || !news.description) {
       return null;
     }
+    const date = new Date(news.publishedAt).toDateString();
     return (
       <li className="news-index-item">
         <a href={news.url} target="_blank">
@@ -17,10 +18,10 @@ class NewsIndexItem extends Component {
             {news.title}
           </div>
           <div className="body">
-            { (news.description.length < 260) ? news.description : news.description.substring(0, 257) + "..." }
+            {(news.description.length < 260) ? news.description : news.description.substring(0, 257) + "..." }
           </div>
           <div className="publish-date">
-            {news.publishedAt}
+            {date}
           </div>
         </div>
       </li>
